@@ -1,0 +1,109 @@
+.lottery-ticket {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+.lottery-ticket.powerball {
+  border-top: 4px solid #e31837;
+}
+
+.lottery-ticket.megamillions {
+  border-top: 4px solid #522583;
+}
+
+.ticket-header h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.ticket-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.numbers-section label,
+.special-ball-section label,
+.multiplier-section label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.numbers-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.number-ball {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: white;
+}
+
+.white-ball {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.special-ball.powerball {
+  background: linear-gradient(135deg, #e31837 0%, #b71c1c 100%);
+}
+
+.special-ball.megamillions {
+  background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%);
+  color: #333;
+}
+
+.multiplier-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 480px) {
+  .lottery-ticket {
+    padding: 15px;
+  }
+
+  .ticket-header h3 {
+    font-size: 1.25rem;
+  }
+
+  .number-ball {
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+  }
+
+  .numbers-container {
+    gap: 8px;
+  }
+
+  .multiplier-badge {
+    font-size: 1.125rem;
+    padding: 8px 16px;
+  }
+}
